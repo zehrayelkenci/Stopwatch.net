@@ -62,7 +62,7 @@ export const stopWatch = () => {
 
 export const startStop = ()=> {
 if(status == "stopped"){
-    interval =window.setInterval(stopWatch, 1000);
+    interval =window.setInterval(stopWatch, 0.0001);
     document.getElementById("btn-toggle").innerHTML= "Start";
     status = "started";
 }else{
@@ -74,7 +74,7 @@ status = "stopped";
 
 // function to reset the stopwatch
  export const reset = ()=> {
-     
+
 window.clearInterval(interval);
 
 ms=0;
