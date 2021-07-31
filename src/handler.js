@@ -14,7 +14,7 @@ let status = "stopped";
 
 // stopwatch function ( logic to determine when to increment next value, etc) 
 export const stopWatch = () => {
-    ms++;
+    ms+=2;
     // logic to determine when to increment next value
     if (ms / 1000 == 1) {
         ms = 0;
